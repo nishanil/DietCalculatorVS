@@ -1,0 +1,1 @@
+\\psf\Home\Documents\blogs\porting\Silverlight_MVC\DietCalculator.iOS\obj\iPhone\Debug\DietCalculator.iOS.csprojResolveAssemblyReference.cache

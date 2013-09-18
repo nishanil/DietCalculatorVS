@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E767A03-6A3A-4D7C-A1DC-E9FE8DA3CD51}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DietCalculator.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>DietCalculatoriOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>true</MtouchDebug>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+    <IpaPackageName />
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <IpaPackageName />
+    <BuildIpa>true</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="MonoTouch.Dialog-1" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="..\DietCalculator.Core\Core\Controller\CalculatorController_v2.cd">
+      <Link>Core\Controller\CalculatorController_v2.cd</Link>
+    </None>
+    <None Include="..\DietCalculator.Core\Core\Controller\ControllerInterface.cd">
+      <Link>Core\Controller\ControllerInterface.cd</Link>
+    </None>
+    <None Include="..\DietCalculator.Core\Core\Model\CalculatorModel.cd">
+      <Link>Core\Model\CalculatorModel.cd</Link>
+    </None>
+    <None Include="..\DietCalculator.Core\Core\Model\CalculatorModel_v2.cd">
+      <Link>Core\Model\CalculatorModel_v2.cd</Link>
+    </None>
+    <None Include="..\DietCalculator.Core\Core\Model\ModelInterface.cd">
+      <Link>Core\Model\ModelInterface.cd</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DietCalculator.Core\Core\View\IDietCalculatorView.cs">
+      <Link>Core\View\IDietCalculatorView.cs</Link>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="..\DietCalculator.Core\Core\Controller\DietCalculatorController.cs">
+      <Link>Core\Controller\DietCalculatorController.cs</Link>
+    </Compile>
+    <Compile Include="..\DietCalculator.Core\Core\Controller\DietCalculatorController_v2.cs">
+      <Link>Core\Controller\DietCalculatorController_v2.cs</Link>
+    </Compile>
+    <Compile Include="..\DietCalculator.Core\Core\Controller\IDietCalculatorController.cs">
+      <Link>Core\Controller\IDietCalculatorController.cs</Link>
+    </Compile>
+    <Compile Include="..\DietCalculator.Core\Core\Helper\StringToNumberUtility.cs">
+      <Link>Core\Helper\StringToNumberUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\DietCalculator.Core\Core\Model\DietCalculatorEventArgs.cs">
+      <Link>Core\Model\DietCalculatorEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\DietCalculator.Core\Core\Model\DietCalculatorModel.cs">
+      <Link>Core\Model\DietCalculatorModel.cs</Link>
+    </Compile>
+    <Compile Include="..\DietCalculator.Core\Core\Model\DietCalculatorModel_v2.cs">
+      <Link>Core\Model\DietCalculatorModel_v2.cs</Link>
+    </Compile>
+    <Compile Include="..\DietCalculator.Core\Core\Model\IDietCalculatorModel.cs">
+      <Link>Core\Model\IDietCalculatorModel.cs</Link>
+    </Compile>
+    <Compile Include="DietDialogViewController.cs" />
+    <Compile Include="Elements\DietStringElement.cs" />
+    <Compile Include="Elements\DietRootElement.cs" />
+    <Compile Include="Elements\NumericEntryElement.cs" />
+    <Compile Include="Elements\DietRadioElement.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default-Landscape%402x~ipad.png" />
+    <BundleResource Include="Resources\Default-Landscape~ipad.png" />
+    <BundleResource Include="Resources\Default-Portrait%402x~ipad.png" />
+    <BundleResource Include="Resources\Default-Portrait~ipad.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\iTunesArtwork%402x.png" />
+    <BundleResource Include="Resources\icon-100.png" />
+    <BundleResource Include="Resources\icon-114.png" />
+    <BundleResource Include="Resources\icon-144.png" />
+    <BundleResource Include="Resources\icon-29.png" />
+    <BundleResource Include="Resources\icon-50.png" />
+    <BundleResource Include="Resources\icon-57.png" />
+    <BundleResource Include="Resources\icon-58.png" />
+    <BundleResource Include="Resources\icon-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="Resources\iTunesArtwork.png" />
+  </ItemGroup>
+</Project>

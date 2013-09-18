@@ -1,0 +1,9 @@
+\\psf\Home\Documents\blogs\porting\Silverlight_MVC\DietCalculator.Core\bin\Debug\DietCalculator.Core.dll
+\\psf\Home\Documents\blogs\porting\Silverlight_MVC\DietCalculator.Core\bin\Debug\DietCalculator.Core.pdb
+\\psf\Home\Documents\blogs\porting\Silverlight_MVC\DietCalculator.Core\obj\iPhoneSimulator\Debug\DietCalculator.Core.dll
+\\psf\Home\Documents\blogs\porting\Silverlight_MVC\DietCalculator.Core\obj\iPhoneSimulator\Debug\DietCalculator.Core.pdb
+\\psf\Home\Documents\blogs\porting\DietCalculator\DietCalculator.Core\bin\Debug\DietCalculator.Core.dll
+\\psf\Home\Documents\blogs\porting\DietCalculator\DietCalculator.Core\bin\Debug\DietCalculator.Core.pdb
+\\psf\Home\Documents\blogs\porting\DietCalculator\DietCalculator.Core\obj\iPhoneSimulator\Debug\DietCalculator.Core.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\blogs\porting\DietCalculator\DietCalculator.Core\obj\iPhoneSimulator\Debug\DietCalculator.Core.dll
+\\psf\Home\Documents\blogs\porting\DietCalculator\DietCalculator.Core\obj\iPhoneSimulator\Debug\DietCalculator.Core.pdb
