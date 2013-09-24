@@ -1,4 +1,0 @@
-/Users/Nish/Source/nishanil-git/DietCalculator/DietCalculator.iOS/obj/iPhone/Release/mtouch-cache/Link/monotouch.dll
-/Users/Nish/Source/nishanil-git/DietCalculator/DietCalculator.iOS/obj/iPhone/Release/mtouch-cache/Link/System.dll
-/Users/Nish/Source/nishanil-git/DietCalculator/DietCalculator.iOS/obj/iPhone/Release/mtouch-cache/Link/mscorlib.dll
-/Users/Nish/Source/nishanil-git/DietCalculator/DietCalculator.iOS/obj/iPhone/Release/mtouch-cache/Link/DietCalculatoriOS.exe
