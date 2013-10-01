@@ -7,6 +7,7 @@ Here's the sample that's being ported: [Exploring the Model View Controller Patt
 
 Updated:
 iOS Application - Uses existing Controllers and Models from SL project.
+Android Application - Uses existing controllers and Models from SL project.
 
 There are two solution files included:
 
@@ -15,5 +16,5 @@ There are two solution files included:
 * DietCalculatorXS.sln - opens in Xamarin Studio, does not include the 'source' Silverlight app
 
 
-Upcoming: Android, Windows Phone, WinRT 
+
 
