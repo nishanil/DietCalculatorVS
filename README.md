@@ -7,10 +7,6 @@ Here's the sample that's being ported: [Exploring the Model View Controller Patt
 
 This port uses file-linking for referencing commonly used files across iOS, Android and Silverlight projects.
 
-Updated:
-iOS Application - Uses existing Controllers and Models from SL project.
-Android Application - Uses existing controllers and Models from SL project.
-
 There are two solution files included:
 
 * DietCalculatorVS.sln - opens in Visual Studio, includes the source Silverlight app for reference
@@ -18,5 +14,9 @@ There are two solution files included:
 * DietCalculatorXS.sln - opens in Xamarin Studio, does not include the 'source' Silverlight app
 
 
+For detailed explanation refer these blog posts:
 
+* [Porting existing.net apps to iOS](http://blog.xamarin.com/porting-existing-.net-apps-to-ios/)
+* [Porting existing .net apps to Android](http://blog.xamarin.com/porting-existing-.net-apps-to-android/)
 
+--
